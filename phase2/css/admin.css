@@ -1,0 +1,295 @@
+:root {
+    --orange: #F25D29;
+    --bg: #F9FAFB;
+    --black: rgb(59, 59, 59);
+}
+
+.grey-container {
+    padding-bottom: 10%;
+}
+
+.bread-crumb {
+    margin-top: 20px;
+    color: var(--black);
+    font-size: 13px;
+    font-weight: bolder;
+}
+
+.crumb {
+    display: flex;
+}
+
+.crumb i {
+    margin-top: 16px;
+    padding: 0 10px;
+}
+
+.page-header {
+    background-color: white;
+    border-radius: 10px;
+    padding: 1px 10px 28px 20px;
+    box-shadow: 8px 5px 25px 5px rgb(241, 239, 239);
+    width: 430px
+}
+
+.page-header h2 {
+    color: var(--orange);
+}
+
+.page-header .page-links a {
+    text-decoration: none;
+    color: rgb(151, 151, 151);
+    font-size: 13px;
+    font-weight: bold;
+    padding-bottom: 5px;
+    font-weight: bold;
+}
+
+.page-header .page-links a:nth-child(2),
+.page-header .page-links a:last-child {
+    margin-left: 20px;
+}
+
+.add-new-section h1 {
+    color: var(--orange);
+}
+
+.add-new-form-area {
+    background-color: white;
+    box-shadow: 8px 5px 25px 5px rgb(241, 239, 239);
+    width: 460px;
+    padding: 40px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    position: relative;
+}
+
+.add-new-section label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.add-new-section input {
+    display: block;
+    border: none;
+    border-bottom: 1px solid var(--black);
+    background-color: transparent;
+    outline: none;
+    width: 100%;
+    margin-bottom: 20px;
+    transition: ease .5s;
+}
+
+.add-new-section select {
+    display: block;
+    border: none;
+    border-bottom: 1px solid var(--black);
+    background-color: transparent;
+    outline: none;
+    width: 100%;
+    margin-bottom: 20px;
+    transition: ease .5s;
+}
+
+.add-new-section input:focus,
+.add-new-section input:focus {
+    border-bottom: 1px solid var(--orange);
+}
+
+.add-new-section button {
+    background-color: #F25D29;
+    outline: none;
+    border: none;
+    color: white;
+    display: inline-block;
+    width: 7em;
+    height: 2.4em;
+    border-radius: 5px;
+    transform: translateY(1em);
+}
+
+.add-new-section button:nth-child(odd) {
+    background-color: #ec7546;
+    margin-right: 10px;
+}
+
+.first-wrapper {
+    margin-top: 3.5em;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.notification-form {
+    background-color: white;
+    box-shadow: 8px 5px 25px 5px rgb(241, 239, 239);
+    padding: 40px;
+    border-radius: 10px;
+    width: 390px;
+}
+
+.notification-section h1 {
+    color: var(--orange);
+}
+
+.notification-section label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.notification-section input {
+    display: block;
+    border: none;
+    border-bottom: 1px solid var(--black);
+    background-color: transparent;
+    outline: none;
+    width: 100%;
+    margin-bottom: 20px;
+    transition: ease .5s;
+}
+
+.notification-form textarea {
+    width: 100%;
+    display: block;
+    background-color: transparent;
+    border: solid 1px var(--black);
+    outline: none;
+}
+
+.notification-form input:focus {
+    border-bottom: 1px solid var(--orange);
+}
+
+.notification-form textarea:focus {
+    border: 1px solid var(--orange);
+}
+
+.notification-form button {
+    background-color: #F25D29;
+    outline: none;
+    border: none;
+    color: white;
+    display: inline-block;
+    width: 7em;
+    height: 2.4em;
+    border-radius: 5px;
+    transform: translateY(1.5em);
+    margin-bottom: 20px;
+}
+
+.notification-form button:nth-child(odd) {
+    background-color: #ec7546;
+    margin-right: 10px;
+}
+
+.materials-form {
+    background-color: white;
+    box-shadow: 8px 5px 25px 5px rgb(241, 239, 239);
+    padding: 40px;
+    border-radius: 10px;
+    width: 390px;
+}
+
+.materials-section h1 {
+    color: var(--orange);
+}
+
+.materials-section label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.materials-section input {
+    display: block;
+    border: none;
+    border-bottom: 1px solid var(--black);
+    background-color: transparent;
+    outline: none;
+    width: 100%;
+    margin-bottom: 20px;
+    transition: ease .5s;
+}
+
+.materials-form select {
+    display: block;
+    border: none;
+    border-bottom: 1px solid var(--black);
+    background-color: transparent;
+    outline: none;
+    width: 100%;
+    margin-bottom: 20px;
+    transition: ease .5s;
+}
+
+.materials-form input:focus {
+    border-bottom: 1px solid var(--orange);
+}
+
+.materials-form textarea:focus {
+    border: 1px solid var(--orange);
+}
+
+.materials-form button {
+    background-color: #F25D29;
+    outline: none;
+    border: none;
+    color: white;
+    display: inline-block;
+    width: 7em;
+    height: 2.4em;
+    border-radius: 5px;
+    transform: translateY(1.5em);
+    margin-bottom: 20px;
+}
+
+.materials-form button:nth-child(odd) {
+    background-color: #ec7546;
+    margin-right: 10px;
+}
+
+@media (max-width:1130px) {
+    .first-wrapper {
+        display: block;
+    }
+    .materials-section {
+        margin-top: 3em;
+    }
+}
+
+@media (max-width:600px) {
+    .container h2,
+    h3 {
+        font-size: 16px;
+    }
+}
+
+@media (max-width:535px) {
+    .add-new-form-area {
+        width: 100%;
+    }
+    .notification-form {
+        width: 82%;
+    }
+}
+
+@media (max-width:500px) {
+    .container h2,
+    h3 {
+        font-size: 14px;
+    }
+}
+
+@media (max-width:530px) {
+    .page-header {
+        width: 93%;
+    }
+}
+
+@media (max-width:470px) {
+    .notification-form {
+        width: 75%;
+    }
+}

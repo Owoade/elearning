@@ -1,0 +1,937 @@
+h3 {
+    color: var(--orange);
+}
+
+ :root {
+    --orange: #F25D29;
+    --bg: #F9FAFB;
+    --black: rgb(59, 59, 59);
+}
+
+body {
+    box-sizing: border-box;
+}
+
+.bread-crumb {
+    margin-top: 20px;
+    color: var(--black);
+    font-size: 13px;
+}
+
+.crumb {
+    display: flex;
+}
+
+.crumb i {
+    margin-top: 16px;
+    padding: 0 10px;
+}
+
+.page-header {
+    background-color: white;
+    border-radius: 20px;
+    padding: 1px 10px 28px 20px;
+    box-shadow: 8px 5px 25px 5px rgb(241, 239, 239);
+    width: 540px;
+}
+
+.page-header h2 {
+    color: var(--orange);
+}
+
+.page-header .page-links a {
+    text-decoration: none;
+    color: rgb(151, 151, 151);
+    font-size: 13px;
+    font-weight: bold;
+    padding-bottom: 5px;
+    font-weight: bold;
+}
+
+.page-header .page-links a:nth-child(2),
+.page-header .page-links a:last-child {
+    margin-left: 20px;
+}
+
+.wrap {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 60px;
+    grid-gap: 30px;
+}
+
+label {
+    display: block;
+    font-size: 12px;
+    font-weight: bold;
+    color: black;
+    padding-bottom: 0px;
+}
+
+label span {
+    color: var(--orange);
+}
+
+select {
+    border-bottom: solid 1px rgb(189, 189, 189);
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    cursor: pointer;
+    outline: none;
+}
+
+select:focus {
+    border-bottom: solid 1px var(--orange);
+    border-top: none;
+    border-right: none;
+    border-left: none;
+}
+
+.personal-info-container {}
+
+.personal-info {
+    background-color: white;
+    width: 500px;
+    padding: 2em;
+    border-radius: 10px;
+    box-shadow: 8px 5px 25px 5px rgb(241, 239, 239);
+}
+
+.personal-info .names {
+    display: flex;
+    margin-top: 20px;
+    width: 85%;
+    justify-content: space-between;
+}
+
+.personal-info .names input {
+    width: 120%;
+    border-bottom: solid 1px rgb(189, 189, 189);
+    padding: .4em;
+    outline: none;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+}
+
+.personal-info .names input:focus,
+.personal-info .others1 input:focus,
+.personal-info .others2 input :focus,
+.personal-info .others4 input:focus,
+.personal-info .home-address input:focus,
+.personal-info .others3 input:focus {
+    border-bottom: solid 1px var(--orange);
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    transition: ease-in .25s;
+}
+
+.personal-info .others1 {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    width: 68%;
+    margin-top: 21px;
+}
+
+.personal-info .others1 input {
+    width: 90%;
+    border-bottom: solid 1px rgb(189, 189, 189);
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    padding: .4em;
+    outline: none;
+}
+
+.personal-info .others1 .DOB input {
+    width: 88%;
+    font-size: x-small;
+    margin-left: 5px;
+    padding: .4em;
+}
+
+.personal-info .others1 .state-origin select {
+    width: 240%;
+}
+
+.personal-info .others1 select {
+    padding: .2em;
+    margin-top: 4px;
+}
+
+.personal-info .others2 {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    width: 69%;
+}
+
+.personal-info .others2 input {
+    width: 117%;
+    padding: .4em;
+    border-bottom: solid 1px rgb(189, 189, 189);
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    outline: none;
+    margin-top: 2px;
+}
+
+.personal-info .others2 input:focus {
+    padding: .4em;
+    border-bottom: solid 1px var(--orange);
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    outline: none;
+    margin-top: 2px;
+    transition: ease-in .25s;
+}
+
+.personal-info .others2 select {
+    width: 230%;
+    margin-top: 10px;
+}
+
+.personal-info .others4 {
+    display: flex;
+    justify-content: space-between;
+    width: 85%;
+    margin-top: 20px;
+}
+
+.personal-info .others4 input {
+    width: 117%;
+    border-bottom: solid 1px rgb(189, 189, 189);
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    padding: .4em;
+    outline: none;
+}
+
+.personal-info .home-address {
+    margin-top: 20px;
+}
+
+.personal-info .home-address input {
+    width: 91%;
+    border-bottom: solid 1px rgb(189, 189, 189);
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    padding: .4em;
+    outline: none;
+}
+
+.personal-info .others3 {
+    display: flex;
+    margin-top: 20px;
+}
+
+.personal-info .others3 input {
+    padding: .4em;
+    outline: none;
+    border-bottom: solid 1px rgb(189, 189, 189);
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    width: 90%;
+    margin-top: 2px;
+}
+
+.personal-info .others3 .state select {
+    width: 260%;
+    margin-top: 11px;
+}
+
+.personal-info .city {
+    margin-left: 10em;
+}
+
+.personal-info .city input {
+    width: 118%;
+}
+
+.personal-info .btns {
+    text-align: right;
+    margin-right: 30px;
+    padding: 40px 0 0 0;
+}
+
+.personal-info .btns input {
+    border: none;
+    outline: none;
+    color: white;
+    background-color: rgb(240, 144, 109);
+    padding: .7em;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.personal-info .btns button {
+    border: none;
+    outline: none;
+    padding: .7em;
+    border-radius: 3px;
+    font-weight: bold;
+    color: var(--orange);
+    background-color: rgba(242, 95, 41, 0.26);
+    margin-right: 10px;
+}
+
+.profile-photo-container {}
+
+.profile-photo {
+    background-color: white;
+    text-align: center;
+    width: 60%;
+    padding: 1em;
+    border-radius: 10px;
+    box-shadow: 8px 5px 25px 5px rgb(241, 239, 239);
+}
+
+.profile-photo .img-container {
+    clip-path: circle(70px);
+}
+
+.profile-photo input {
+    margin: 10px 0;
+    border: none;
+    outline: none;
+    padding: .7em;
+    border-radius: 3px;
+    font-weight: bold;
+    background-color: var(--orange);
+    color: white;
+    margin-right: 10px;
+}
+
+.profile-photo input:last-child {
+    margin: 10px 0;
+    border: none;
+    outline: none;
+    padding: .7em;
+    border-radius: 3px;
+    font-weight: bold;
+    color: var(--black);
+    background: transparent;
+    margin-right: 10px;
+}
+
+.next-of-kin-container {}
+
+.next-of-kin {
+    background-color: white;
+    width: 85%;
+    padding: 2em;
+    border-radius: 10px;
+    box-shadow: 8px 5px 25px 5px rgb(241, 239, 239);
+}
+
+.next-of-kin .info1 {
+    padding-bottom: 5px;
+}
+
+.next-of-kin .info1 input {
+    width: 93%;
+    border-bottom: solid 1px rgb(189, 189, 189);
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    padding: .4em;
+    outline: none;
+}
+
+.next-of-kin .info1 input:focus {
+    width: 93%;
+    border-bottom: solid 1px var(--orange);
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    padding: .4em;
+    outline: none;
+    transition: ease-in .25s;
+}
+
+.next-of-kin .info2 {
+    padding-bottom: 5px;
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin-top: 15px;
+}
+
+.next-of-kin .info2 input {
+    width: 107%;
+    border-bottom: solid 1px rgb(189, 189, 189);
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    padding: .4em;
+    outline: none;
+}
+
+.next-of-kin .info2 input:focus {
+    width: 107%;
+    border-bottom: solid 1px var(--orange);
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    padding: .4em;
+    outline: none;
+    transition: .25s ease-in;
+}
+
+.next-of-kin .address {
+    padding-bottom: 5px;
+    margin-top: 15px;
+}
+
+.next-of-kin .address input {
+    width: 93%;
+    border-bottom: solid 1px rgb(189, 189, 189);
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    padding: .4em;
+    outline: none;
+}
+
+.next-of-kin .address input:focus {
+    width: 93%;
+    border-bottom: solid 1px var(--orange);
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    padding: .4em;
+    outline: none;
+    transition: ease-in .25s;
+}
+
+.next-of-kin .occupation {
+    padding-bottom: 5px;
+    margin-top: 15px;
+}
+
+.next-of-kin .occupation input {
+    width: 38%;
+    border-bottom: solid 1px rgb(189, 189, 189);
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    padding: .4em;
+    outline: none;
+}
+
+.next-of-kin .occupation input:focus {
+    width: 38%;
+    border-bottom: solid 1px var(--orange);
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    padding: .4em;
+    outline: none;
+    transition: ease-in .25s;
+}
+
+.next-of-kin .btns {
+    padding: 20px 0 10px 0;
+    text-align: right;
+    margin-right: 22px;
+}
+
+.next-of-kin .btns input {
+    border: none;
+    outline: none;
+    color: white;
+    background-color: rgb(240, 144, 109);
+    padding: .7em;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.next-of-kin .btns button {
+    border: none;
+    outline: none;
+    padding: .7em;
+    border-radius: 3px;
+    font-weight: bold;
+    color: var(--orange);
+    background-color: rgba(242, 95, 41, 0.26);
+    margin-right: 10px;
+}
+
+.sponsor {
+    background-color: white;
+    width: 85%;
+    padding: 2em;
+    border-radius: 10px;
+    box-shadow: 8px 5px 25px 5px rgb(241, 239, 239);
+}
+
+.sponsor .info1 {
+    padding-bottom: 5px;
+}
+
+.sponsor .info1 input {
+    width: 93%;
+    border-bottom: solid 1px rgb(189, 189, 189);
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    padding: .4em;
+    outline: none;
+}
+
+.sponsor .info1 input:focus {
+    width: 93%;
+    border-bottom: solid 1px var(--orange);
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    padding: .4em;
+    outline: none;
+    transition: ease-in .25s;
+}
+
+.sponsor .info2 {
+    padding-bottom: 5px;
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin-top: 15px;
+}
+
+.sponsor .info2 input {
+    width: 107%;
+    border-bottom: solid 1px rgb(189, 189, 189);
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    padding: .4em;
+    outline: none;
+}
+
+.sponsor .info2 input:focus {
+    width: 107%;
+    border-bottom: solid 1px var(--orange);
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    padding: .4em;
+    outline: none;
+    transition: .25s ease-in;
+}
+
+.sponsor .address {
+    padding-bottom: 5px;
+    margin-top: 15px;
+}
+
+.sponsor .address input {
+    width: 93%;
+    border-bottom: solid 1px rgb(189, 189, 189);
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    padding: .4em;
+    outline: none;
+}
+
+.sponsor .address input:focus {
+    width: 93%;
+    border-bottom: solid 1px var(--orange);
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    padding: .4em;
+    outline: none;
+    transition: ease-in .25s;
+}
+
+.sponsor .occupation {
+    padding-bottom: 5px;
+    margin-top: 15px;
+}
+
+.sponsor .occupation input {
+    width: 38%;
+    border-bottom: solid 1px rgb(189, 189, 189);
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    padding: .4em;
+    outline: none;
+}
+
+.sponsor .occupation input:focus {
+    width: 38%;
+    border-bottom: solid 1px var(--orange);
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    padding: .4em;
+    outline: none;
+    transition: ease-in .25s;
+}
+
+.sponsor .btns {
+    padding: 20px 0 10px 0;
+    text-align: right;
+    margin-right: 22px;
+}
+
+.sponsor .btns input {
+    border: none;
+    outline: none;
+    color: white;
+    background-color: rgb(240, 144, 109);
+    padding: .7em;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.sponsor .btns button {
+    border: none;
+    outline: none;
+    padding: .7em;
+    border-radius: 3px;
+    font-weight: bold;
+    color: var(--orange);
+    background-color: rgba(242, 95, 41, 0.26);
+    margin-right: 10px;
+}
+
+.department-info-container {
+    padding-bottom: 40px;
+}
+
+.department-info {
+    background-color: white;
+    width: 500px;
+    padding: 2em;
+    border-radius: 10px;
+    box-shadow: 8px 5px 25px 5px rgb(241, 239, 239);
+}
+
+.department-info .dept1 {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+}
+
+.department-info .dept1 input {
+    width: 120%;
+    border-bottom: solid 1px rgb(189, 189, 189);
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    padding: .4em;
+    outline: none;
+}
+
+.department-info .dept1 input:focus {
+    width: 120%;
+    border-bottom: solid 1px var(--orange);
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    padding: .4em;
+    outline: none;
+    transition: ease-in .25s;
+}
+
+.department-info .dept2 {
+    display: flex;
+    margin-top: 15px;
+    justify-content: space-between;
+    width: 90%;
+}
+
+.department-info .dept2 input {
+    width: 120%;
+    border-bottom: solid 1px rgb(189, 189, 189);
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    padding: .4em;
+    outline: none;
+}
+
+.department-info .dept2 input:focus {
+    width: 120%;
+    border-bottom: solid 1px var(--orange);
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    padding: .4em;
+    outline: none;
+    transition: ease-in.25s;
+}
+
+.department-info .btns {
+    padding: 20px 0 10px 0;
+    text-align: right;
+    margin-right: 22px;
+}
+
+.department-info .btns input {
+    border: none;
+    outline: none;
+    color: white;
+    background-color: rgb(240, 144, 109);
+    padding: .7em;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.department-info .btns button {
+    border: none;
+    outline: none;
+    padding: .7em;
+    border-radius: 3px;
+    font-weight: bold;
+    color: var(--orange);
+    background-color: rgba(242, 95, 41, 0.26);
+    margin-right: 10px;
+}
+
+@media (max-width:1065px) {
+    .wrap {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        margin-top: 60px;
+        grid-gap: 30px;
+    }
+    .profile-photo-container {
+        grid-row: 1/2;
+    }
+    .profile-photo {
+        width: 350px;
+    }
+}
+
+@media (max-width:640px) {
+    .page-header {
+        width: 90%;
+    }
+    .personal-info {
+        width: 80%;
+    }
+    .personal-info .names {
+        width: 95%;
+    }
+    .personal-info .names input {
+        width: 100%;
+    }
+    .personal-info .others1 {
+        width: 75%;
+    }
+    .personal-info .others1 .DOB input {
+        width: 60%;
+    }
+    .personal-info .others1 .state-origin select {
+        width: 200%;
+    }
+    .personal-info .others1 select {
+        width: 90%;
+    }
+    .personal-info .others1 input {
+        width: 90%;
+    }
+    .personal-info .others2 {
+        width: 75%;
+    }
+    .personal-info .others2 input {
+        width: 100%;
+    }
+    .personal-info .others2 select {
+        width: 195%;
+    }
+    .personal-info .others4 {
+        width: 94%;
+    }
+    .personal-info .others4 .Email input {
+        width: 100%;
+    }
+    .personal-info .others4 .Phone input {
+        width: 100%;
+    }
+    .personal-info .home-address input {
+        width: 94%;
+    }
+    .personal-info .city {
+        margin-left: 32%;
+    }
+    .personal-info .city input {
+        width: 102%;
+    }
+    .personal-info .others3 .state select {
+        width: 230%;
+    }
+}
+
+@media (max-width:580px) {
+    .personal-info {
+        width: 70%;
+    }
+    .personal-info .names {
+        width: 99%;
+    }
+    .personal-info .others1 {
+        width: 78%;
+    }
+    .personal-info .others1 .state-origin select {
+        width: 195%;
+    }
+    .personal-info .others2 {
+        width: 78%;
+    }
+    .personal-info .others4 {
+        width: 99%;
+    }
+    .personal-info .home-address input {
+        width: 98%;
+    }
+    .personal-info .city input {
+        width: 100%;
+    }
+}
+
+@media (max-width:540px) {
+    .personal-info .names input {
+        width: 80%;
+    }
+    .personal-info .others1 .DOB input {
+        width: 50%;
+    }
+    .personal-info .others1 .state-origin select {
+        width: 160%;
+    }
+    .personal-info .others1 select {
+        width: 90%;
+    }
+    .personal-info .others1 input {
+        width: 90%;
+    }
+    .personal-info .others2 input {
+        width: 80%;
+    }
+    .personal-info .others2 select {
+        width: 159%;
+    }
+    .personal-info .others4 .Email input {
+        width: 80%;
+    }
+    .personal-info .others4 .Phone input {
+        width: 80%;
+    }
+    .personal-info .home-address input {
+        width: 90%;
+    }
+    .personal-info .city {
+        margin-left: 35%;
+    }
+    .personal-info .city input {
+        width: 78%;
+    }
+    .personal-info .others3 .state select {
+        width: 190%;
+    }
+}
+
+@media (max-width:430px) {
+    .personal-info .names,
+    .personal-info .others1,
+    .personal-info .others2,
+    .personal-info .others3,
+    .personal-info .home-address {
+        display: block;
+    }
+    .personal-info .others1 select,
+    .personal-info .others2 select,
+    .personal-info .others3 select {
+        width: 82%;
+    }
+    .personal-info .others4 {
+        display: block;
+    }
+    .personal-info .others1 .state-origin select {
+        width: 107%;
+    }
+    .personal-info .others1 .gender select {
+        width: 103%;
+    }
+    .personal-info .others1 .DOB input {
+        width: 98%;
+    }
+    .personal-info .Hometown input {
+        width: 100%;
+    }
+    .personal-info .marital select {
+        width: 104%;
+    }
+    .personal-info .others2 .Phone input {
+        width: 80%;
+    }
+    .personal-info .home-address input {
+        width: 70%;
+    }
+    .personal-info .others3 .state select {
+        width: 70%;
+    }
+    .personal-info .city input {
+        width: 70%;
+    }
+    .profile-photo {
+        width: 60%;
+    }
+    .next-of-kin {
+        padding: 1em;
+    }
+    .next-of-kin .info1,
+    .next-of-kin .home-address,
+    .next-of-kin .occupation {
+        display: block;
+        padding-bottom: 5px;
+    }
+    .next-of-kin .address input {
+        width: 80%;
+    }
+    .next-of-kin .occupation input {
+        width: 80%;
+    }
+    .sponsor {
+        padding: 1em;
+    }
+    .sponsor .info1,
+    .sponsor .home-address,
+    .sponsor .occupation {
+        display: block;
+        padding-bottom: 5px;
+    }
+    .sponsor .address input {
+        width: 80%;
+    }
+    .sponsor .occupation input {
+        width: 80%;
+    }
+    .department-info {
+        padding: 1em;
+    }
+    .department-info .dept1,
+    .department-info .dept2 {
+        display: block;
+    }
+    .profile-photo .img-container {
+        clip-path: circle(60px);
+    }
+    .crumb i {
+        margin-top: 15px;
+        padding: 0 10px;
+    }
+}
